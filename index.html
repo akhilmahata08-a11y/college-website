@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vidyanova Institute of Technology — Admissions, Academics & Student Portal</title>
+<meta name="description" content="Vidyanova Institute of Technology — engineering, science, commerce and arts programmes, online admissions, notices, events and a student portal.">
+<meta name="theme-color" content="#0b1020">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%237c5cff'/%3E%3Ctext x='16' y='22' font-size='16' font-family='sans-serif' font-weight='bold' fill='white' text-anchor='middle'%3EV%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- animated glass background -->
+<div class="aurora" aria-hidden="true">
+  <div class="blob b1"></div>
+  <div class="blob b2"></div>
+  <div class="blob b3"></div>
+</div>
+<div class="grain" aria-hidden="true"></div>
+
+<a class="skip" href="#main" style="position:absolute;left:-9999px">Skip to content</a>
+
+<!-- ================= NAV ================= -->
+<header class="nav">
+  <div class="wrap">
+    <nav class="nav-inner glass" aria-label="Main navigation">
+      <a class="brand" href="#home">
+        <span class="brand-mark">V</span>
+        <span class="brand-text">
+          <strong>Vidyanova</strong>
+          <span>Institute of Technology</span>
+        </span>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#home" class="active">Home</a>
+        <a href="#academics">Academics</a>
+        <a href="#admissions">Admissions</a>
+        <a href="#portal">Student Portal</a>
+        <a href="#campus">Campus</a>
+        <a href="#notices">Notices</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Switch colour theme" title="Switch theme">◐</button>
+        <button class="icon-btn hamburger" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+        <a class="btn btn-primary btn-sm" href="#admissions" style="display:none" id="navApply">Apply now</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="home">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <span class="eyebrow">● Admissions open · Autumn 2026</span>
+          <h1>Engineering minds.<br><span class="grad">Building what's next.</span></h1>
+          <p class="lead">A NAAC A++ campus in Bengaluru with 14 departments, 96 laboratories and a placement record built on
+            four decades of industry partnerships. Apply online in under five minutes.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#admissions">Start your application</a>
+            <a class="btn btn-ghost" href="#academics">Explore programmes</a>
+          </div>
+          <p style="margin-top:1.4rem;font-size:.82rem">
+            <strong style="color:var(--text)">Scholarships up to 100%</strong> · Applications close 30 November 2026
+          </p>
+        </div>
+
+        <aside class="hero-card glass reveal">
+          <h4>This week on campus</h4>
+          <div class="timeline" id="heroTimeline"></div>
+          <a class="btn btn-sm btn-ghost" href="#notices" style="margin-top:1.1rem">All notices →</a>
+        </aside>
+      </div>
+
+      <div class="stats glass" id="stats">
+        <div class="stat"><b data-count="8420" data-suffix="+">0</b><span>Students</span></div>
+        <div class="stat"><b data-count="412" data-suffix="">0</b><span>Faculty</span></div>
+        <div class="stat"><b data-count="14" data-suffix="">0</b><span>Departments</span></div>
+        <div class="stat"><b data-count="94" data-suffix="%">0</b><span>Placement rate</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WHY US ================= -->
+  <section id="why">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div>
+          <span class="eyebrow">Why Vidyanova</span>
+          <h2>Built for the way students<br>actually learn</h2>
+        </div>
+        <p>Small cohorts, studio-style labs and a mentor assigned to every student from day one — not a lecture hall of 200.</p>
+      </div>
+
+      <div class="grid g3">
+        <article class="card glass reveal">
+          <div class="icon-tile">🧪</div>
+          <h3>Lab-first curriculum</h3>
+          <p>Every theory course is paired with a studio or lab module. You ship a working artefact each semester, not just an exam answer sheet.</p>
+        </article>
+        <article class="card glass reveal">
+          <div class="icon-tile">🎯</div>
+          <h3>1:18 faculty ratio</h3>
+          <p>412 full-time faculty, 68 with doctorates from IITs and global universities. Office hours are booked, tracked and honoured.</p>
+        </article>
+        <article class="card glass reveal">
+          <div class="icon-tile">💼</div>
+          <h3>Placement from year three</h3>
+          <p>318 recruiters visited last season. Internship placement starts in the fifth semester, with a dedicated career cell.</p>
+        </article>
+        <article class="card glass reveal">
+          <div class="icon-tile">🌍</div>
+          <h3>Semester abroad</h3>
+          <p>Credit-transfer agreements with 11 universities across Germany, Singapore and Australia — plus funded research internships.</p>
+        </article>
+        <article class="card glass reveal">
+          <div class="icon-tile">🏆</div>
+          <h3>Research that ships</h3>
+          <p>₹18 crore in funded projects, 47 patents filed in five years, and undergraduate co-authorship on 120+ papers.</p>
+        </article>
+        <article class="card glass reveal">
+          <div class="icon-tile">🤝</div>
+          <h3>Scholarships that reach</h3>
+          <p>₹6.4 crore disbursed last year. Merit, need and first-generation scholarships, with a single application form.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ACADEMICS ================= -->
+  <section id="academics">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div>
+          <span class="eyebrow">Academics</span>
+          <h2>14 departments, one catalogue</h2>
+        </div>
+        <p>Filter by school, search by name, and open any programme for eligibility, seats and fees.</p>
+      </div>
+
+      <div class="toolbar">
+        <div class="chips" id="deptChips" role="group" aria-label="Filter by school"></div>
+        <input class="search" id="courseSearch" type="search" placeholder="Search programmes…" aria-label="Search programmes">
+      </div>
+
+      <div class="grid g3" id="courseGrid"></div>
+      <p id="courseEmpty" style="display:none;padding:2rem;text-align:center">No programme matches that search. Try “computer”, “commerce” or clear the filters.</p>
+    </div>
+  </section>
+
+  <!-- ================= ADMISSIONS ================= -->
+  <section id="admissions">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div>
+          <span class="eyebrow">Admissions 2026</span>
+          <h2>Apply in five minutes</h2>
+        </div>
+        <p>Submit this form and you get an application number instantly. Our admissions team calls within two working days.</p>
+      </div>
+
+      <div class="split">
+        <form class="glass" id="applyForm" style="padding:1.6rem" novalidate>
+          <div class="form-grid">
+            <div class="field">
+              <label for="apName">Full name *</label>
+              <input id="apName" name="name" type="text" placeholder="As on your board certificate" autocomplete="name" required>
+              <span class="err" data-err="apName"></span>
+            </div>
+            <div class="field">
+              <label for="apEmail">Email *</label>
+              <input id="apEmail" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+              <span class="err" data-err="apEmail"></span>
+            </div>
+            <div class="field">
+              <label for="apPhone">Phone *</label>
+              <input id="apPhone" name="phone" type="tel" placeholder="10-digit mobile number" autocomplete="tel" required>
+              <span class="err" data-err="apPhone"></span>
+            </div>
+            <div class="field">
+              <label for="apCourse">Programme *</label>
+              <select id="apCourse" name="course" required>
+                <option value="">Choose a programme…</option>
+              </select>
+              <span class="err" data-err="apCourse"></span>
+            </div>
+            <div class="field">
+              <label for="apMarks">Class XII / Diploma % *</label>
+              <input id="apMarks" name="marks" type="number" min="0" max="100" step="0.01" placeholder="e.g. 87.5" required>
+              <span class="err" data-err="apMarks"></span>
+            </div>
+            <div class="field">
+              <label for="apCategory">Category</label>
+              <select id="apCategory" name="category">
+                <option>General</option>
+                <option>OBC-NCL</option>
+                <option>SC</option>
+                <option>ST</option>
+                <option>EWS</option>
+              </select>
+              <span class="err" data-err="apCategory"></span>
+            </div>
+            <div class="field full">
+              <label for="apNote">Anything we should know?</label>
+              <textarea id="apNote" name="note" placeholder="Scholarship needs, sports quota, gap year — optional"></textarea>
+            </div>
+          </div>
+          <div style="display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1.1rem;align-items:center">
+            <button class="btn btn-primary" type="submit" id="applyBtn">Submit application</button>
+            <button class="btn btn-ghost" type="reset">Clear</button>
+          </div>
+          <p class="form-note">We never share your details. Fields marked * are required.</p>
+        </form>
+
+        <div>
+          <div class="glass" style="padding:1.6rem">
+            <h3>Application status</h3>
+            <p style="font-size:.88rem">Already applied? Enter the application number you received to check where it stands.</p>
+            <div class="login-row" style="grid-template-columns:1fr auto;margin-top:.8rem">
+              <input id="statusId" type="text" placeholder="e.g. VIT-2026-4821" aria-label="Application number">
+              <button class="btn btn-sm" id="statusBtn" type="button">Check</button>
+            </div>
+            <div id="statusOut" style="margin-top:1rem"></div>
+          </div>
+
+          <div class="glass" style="padding:1.6rem;margin-top:1rem">
+            <h3>Key dates</h3>
+            <div class="timeline" style="margin-top:.8rem">
+              <div class="timeline-row"><span class="timeline-date">30 Nov</span><p>Applications close<small><br>All programmes, all categories</small></p></div>
+              <div class="timeline-row"><span class="timeline-date">12 Dec</span><p>Entrance test & interview<small><br>Online, 90 minutes</small></p></div>
+              <div class="timeline-row"><span class="timeline-date">04 Jan</span><p>First merit list<small><br>Email + portal</small></p></div>
+              <div class="timeline-row"><span class="timeline-date">20 Jan</span><p>Classes begin<small><br>Orientation week from 14 Jan</small></p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= STUDENT PORTAL ================= -->
+  <section id="portal">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div>
+          <span class="eyebrow">Student portal</span>
+          <h2>Results, attendance and fees</h2>
+        </div>
+        <p>Sign in with your roll number and date of birth. Try the demo account: <strong style="color:var(--text)">CSE2021001</strong> / <strong style="color:var(--text)">2003-05-14</strong>.</p>
+      </div>
+
+      <div class="glass portal-shell reveal" id="portalShell">
+        <form id="loginForm" class="login-row" novalidate>
+          <div class="field">
+            <label for="rollNo">Roll number</label>
+            <input id="rollNo" type="text" placeholder="CSE2021001" autocomplete="username" required>
+            <span class="err" data-err="rollNo"></span>
+          </div>
+          <div class="field">
+            <label for="dob">Date of birth</label>
+            <input id="dob" type="date" required>
+            <span class="err" data-err="dob"></span>
+          </div>
+          <button class="btn btn-primary" type="submit">Sign in</button>
+        </form>
+        <p id="loginMsg" style="margin:.9rem 0 0;font-size:.85rem"></p>
+        <div id="portalBody" style="margin-top:1.2rem"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CAMPUS / EVENTS ================= -->
+  <section id="campus">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div>
+          <span class="eyebrow">Campus life</span>
+          <h2>What's happening on campus</h2>
+        </div>
+        <div class="chips" role="group" aria-label="Filter events">
+          <button class="chip" data-ev="all" aria-pressed="true">All</button>
+          <button class="chip" data-ev="upcoming" aria-pressed="false">Upcoming</button>
+          <button class="chip" data-ev="past" aria-pressed="false">Past</button>
+        </div>
+      </div>
+
+      <div class="grid g3" id="eventGrid"></div>
+
+      <h3 class="reveal" style="margin:2.6rem 0 1rem">Around the campus</h3>
+      <div class="grid g3">
+        <div class="tile t1 reveal"><span>Central library · 92,000 volumes</span></div>
+        <div class="tile t2 reveal"><span>Innovation lab · open 24×7</span></div>
+        <div class="tile t3 reveal"><span>Sports complex · Olympic pool</span></div>
+        <div class="tile t4 reveal"><span>Hostels · 2,400 beds</span></div>
+        <div class="tile t5 reveal"><span>Auditorium · 1,200 seats</span></div>
+        <div class="tile t6 reveal"><span>Green campus · 42 acres</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= NOTICES ================= -->
+  <section id="notices">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div>
+          <span class="eyebrow">Notice board</span>
+          <h2>Official notices</h2>
+        </div>
+        <p>Filter by category. Notices are stored in your browser until you connect Supabase — then they persist for everyone.</p>
+      </div>
+
+      <div class="toolbar">
+        <div class="chips" id="noticeChips" role="group" aria-label="Filter notices by category"></div>
+        <input class="search" id="noticeSearch" type="search" placeholder="Search notices…" aria-label="Search notices">
+      </div>
+
+      <div class="grid" id="noticeList" style="gap:.7rem"></div>
+
+      <details class="glass" style="padding:1.2rem 1.4rem;margin-top:1.4rem">
+        <summary style="cursor:pointer;font-weight:650;font-size:.92rem">Publish a notice (admin demo)</summary>
+        <form id="noticeForm" class="form-grid" style="margin-top:1rem" novalidate>
+          <div class="field full">
+            <label for="ntTitle">Title *</label>
+            <input id="ntTitle" type="text" placeholder="e.g. Mid-semester timetable released" required>
+            <span class="err" data-err="ntTitle"></span>
+          </div>
+          <div class="field full">
+            <label for="ntBody">Details *</label>
+            <textarea id="ntBody" placeholder="Two or three lines students need to know" required></textarea>
+            <span class="err" data-err="ntBody"></span>
+          </div>
+          <div class="field">
+            <label for="ntCat">Category</label>
+            <select id="ntCat">
+              <option value="general">General</option>
+              <option value="exam">Examination</option>
+              <option value="event">Event</option>
+              <option value="admin">Administration</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="ntDate">Date</label>
+            <input id="ntDate" type="date">
+          </div>
+          <div class="full">
+            <button class="btn btn-primary" type="submit">Publish notice</button>
+          </div>
+        </form>
+      </details>
+    </div>
+  </section>
+
+  <!-- ================= FACULTY ================= -->
+  <section id="faculty">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div>
+          <span class="eyebrow">People</span>
+          <h2>Faculty you'll actually meet</h2>
+        </div>
+        <input class="search" id="facultySearch" type="search" placeholder="Search by name or department…" aria-label="Search faculty">
+      </div>
+      <div class="grid g2" id="facultyGrid"></div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <div>
+          <span class="eyebrow">Contact</span>
+          <h2>Talk to admissions</h2>
+        </div>
+        <p>Calls answered 9:30 am – 6:00 pm IST, Monday to Saturday.</p>
+      </div>
+
+      <div class="split">
+        <form class="glass" id="contactForm" style="padding:1.6rem" novalidate>
+          <div class="form-grid">
+            <div class="field">
+              <label for="ctName">Name *</label>
+              <input id="ctName" type="text" placeholder="Your name" required>
+              <span class="err" data-err="ctName"></span>
+            </div>
+            <div class="field">
+              <label for="ctEmail">Email *</label>
+              <input id="ctEmail" type="email" placeholder="you@example.com" required>
+              <span class="err" data-err="ctEmail"></span>
+            </div>
+            <div class="field full">
+              <label for="ctSubject">Subject *</label>
+              <input id="ctSubject" type="text" placeholder="Hostel, fees, eligibility…" required>
+              <span class="err" data-err="ctSubject"></span>
+            </div>
+            <div class="field full">
+              <label for="ctMsg">Message *</label>
+              <textarea id="ctMsg" placeholder="Tell us what you need" required></textarea>
+              <span class="err" data-err="ctMsg"></span>
+            </div>
+          </div>
+          <button class="btn btn-primary" type="submit" style="margin-top:1.1rem">Send message</button>
+        </form>
+
+        <div class="glass" style="padding:1.6rem">
+          <h3>Campus office</h3>
+          <div class="contact-list">
+            <div class="contact-item"><span>📍</span><span><b>Address</b>Vidyanova Institute of Technology, Hosur Road, Bengaluru 560100, Karnataka</span></div>
+            <div class="contact-item"><span>📞</span><span><b>Admissions helpline</b>+91 80 4000 1234</span></div>
+            <div class="contact-item"><span>✉️</span><span><b>Email</b>admissions@vidyanova.edu.in</span></div>
+            <div class="contact-item"><span>🕘</span><span><b>Office hours</b>9:30 am – 6:00 pm IST, Mon–Sat</span></div>
+          </div>
+          <div class="tile t5" style="margin-top:1.2rem;aspect-ratio:16/9"><span>Hosur Road campus · 42 acres</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <div class="foot glass">
+      <div>
+        <a class="brand" href="#home" style="margin-bottom:.8rem">
+          <span class="brand-mark">V</span>
+          <span class="brand-text"><strong>Vidyanova</strong><span>Institute of Technology</span></span>
+        </a>
+        <p style="font-size:.84rem;margin:0">NAAC A++ · AICTE approved · Affiliated to VTU. Building engineers since 1984.</p>
+      </div>
+      <div>
+        <h5>Academics</h5>
+        <a href="#academics">All programmes</a>
+        <a href="#academics">Departments</a>
+        <a href="#faculty">Faculty</a>
+        <a href="#portal">Student portal</a>
+      </div>
+      <div>
+        <h5>Admissions</h5>
+        <a href="#admissions">Apply online</a>
+        <a href="#admissions">Fees & scholarships</a>
+        <a href="#admissions">Key dates</a>
+        <a href="#contact">Contact us</a>
+      </div>
+      <div>
+        <h5>Campus</h5>
+        <a href="#campus">Events</a>
+        <a href="#notices">Notice board</a>
+        <a href="#campus">Hostels</a>
+        <a href="#contact">Visit us</a>
+      </div>
+    </div>
+    <p class="copyright">© <span id="year"></span> Vidyanova Institute of Technology · Demo project, content is illustrative.</p>
+  </div>
+</footer>
+
+<button class="icon-btn totop" id="toTop" aria-label="Back to top">↑</button>
+<div class="toasts" id="toasts" aria-live="polite"></div>
+
+<div class="modal-backdrop" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal glass" id="modalCard"></div>
+</div>
+
+<script src="js/supabase-config.js"></script>
+<script src="js/store.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
