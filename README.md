@@ -90,9 +90,35 @@ board's delete/publish behind an authenticated admin role. Never put the
 
 ## Deploying
 
-Any static host works, since there is no build step: GitHub Pages (Settings →
-Pages → deploy from `main`), Netlify, Cloudflare Pages, or Vercel. Drag the
-folder in and it is live.
+There is no build step, so any static host works. GitHub Pages is already wired
+up for this repo (`main` branch, root folder).
+
+### Vercel
+
+1. Open [vercel.com/new](https://vercel.com/new) and sign in with GitHub.
+2. **Import Git Repository** → choose `college-website` → **Import**.
+3. On the configure screen:
+   - **Framework Preset:** `Other`
+   - **Build Command:** leave empty
+   - **Output Directory:** leave empty
+   - **Root Directory:** `./`
+4. **Deploy.** The build takes about 20 seconds and you get a URL like
+   `college-website-<hash>.vercel.app`.
+
+After that, every push to `main` redeploys automatically — editing a file in the
+GitHub web editor is enough to update the live site.
+
+**Custom domain:** Project → Settings → Domains → Add, then create the DNS
+record Vercel shows you. HTTPS is issued automatically.
+
+**Supabase on Vercel:** the keys live in `js/supabase-config.js`, which is served
+as a static file. Commit the values before deploying — reading them from Vercel
+Environment Variables would need a build step this project deliberately avoids.
+The anon key is safe to expose; the service_role key never is.
+
+Netlify, Cloudflare Pages, Firebase Hosting and any static file server work the
+same way: point them at the repository root, no build command, no output
+directory.
 
 ## Notes
 
